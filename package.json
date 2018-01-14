@@ -4,11 +4,12 @@
     "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0-beta.14",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.10.1"
   },
   "scripts": {
-    "start-dev": "webpack-dev-server --config config/webpack.dev.config.js"
+    "start-dev": "webpack-dev-server --hot --config config/webpack.dev.config.js"
   },
   "name": "MyReactJS",
   "version": "1.0.0",

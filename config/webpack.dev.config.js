@@ -8,7 +8,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 })
 
 module.exports = {
-    entry: './src/index.js',
+    entry: ['react-hot-loader/patch','./src/index.js'],
     output: {
         path: path.resolve('dist')
     },

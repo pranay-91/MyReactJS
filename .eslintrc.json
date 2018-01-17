@@ -1,0 +1,25 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "rules": {
+    "quotes": [2, "double"],
+    "react/sort-comp": [
+      1,
+      {
+        "order": [
+          "type-annotations",
+          "static-methods",
+          "lifecycle",
+          "/^on.+$/",
+          "everything-else",
+          "render"
+        ]
+      }
+    ]
+  },
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": ["react", "jsx-a11y", "import"]
+}

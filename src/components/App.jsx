@@ -7,11 +7,18 @@ type Props = {
   foo: number,
 };
 
-export default class App extends Component<Props> {
+type State = {
+  a: number,
+};
+
+export default class App extends Component<Props, State> {
   appList: Array<string>;
   constructor() {
     super();
     this.appList = ["word", "cross", "jumble", "new"];
+    this.state = {
+      a: 0,
+    };
   }
 
   renderList() {
@@ -20,6 +27,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <div>
+        <h1>{this.state.a}</h1>
         <h1>{this.props.foo}</h1>
         <ul>{this.renderList()}</ul>
       </div>

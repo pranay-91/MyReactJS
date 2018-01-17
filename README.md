@@ -2,13 +2,21 @@
 
 ## Introduction
 
-This is a sample boilerplate web-application using React JS. Most of the setup required for building a React SPA has been built out of the box. This includes:
+This is a sample boilerplate web-application to get started with building SPA using React JS. Most of the setup has been built out of the box. This includes:
 
-* webpack
-* webpack hot reload
-* ES6 support
-* ES Lint(AirBnb preset)
-* Prettier
+* [Webpack](https://webpack.js.org/)
+* [Webpack hot reload (react-hot-reload)](https://gaearon.github.io/react-hot-loader/getstarted/)
+* [ES6 support](http://es6-features.org/)
+* [ES Lint](https://eslint.org/)
+* [ES Lint AirBnb Style Guide](https://github.com/airbnb/javascript/tree/master/react)
+* [Prettier (Code formatter)](https://prettier.io/)
+* [Flow (Static type checker)](https://flow.org/en/)
+
+This project works well with Visual Studio Code. The following extensions are required to fully utilise features such as Prettier and Flow:
+
+* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=ajhyndman.flow-for-vscode-temp)
 
 ## Get Started
 

@@ -12,14 +12,13 @@ type State = {
 };
 
 export default class App extends Component<Props, State> {
-  appList: Array<string>;
-  constructor() {
-    super();
-    this.appList = ["word", "cross", "jumble", "new"];
-    this.state = {
-      a: 0,
-    };
-  }
+  static defaultProps = {
+    foo: 0,
+  };
+  state = {
+    a: 0,
+  };
+  appList: Array<string> = ["cross", "jumble", "new"];
 
   renderList() {
     return this.appList.map(app => <li key={shortid.generate()}>{app}</li>);
@@ -27,8 +26,8 @@ export default class App extends Component<Props, State> {
   render() {
     return (
       <div>
-        <h1>{this.state.a}</h1>
-        <h1>{this.props.foo}</h1>
+        <h1>State: {this.state.a}</h1>
+        <h1>Props: {this.props.foo}</h1>
         <ul>{this.renderList()}</ul>
       </div>
     );

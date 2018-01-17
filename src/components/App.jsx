@@ -1,5 +1,6 @@
 import React from 'react';
 import shortid from 'shortid';
+import '../styles/app.scss';
 
 export default class App extends React.Component {
   constructor() {
